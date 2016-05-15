@@ -3,9 +3,10 @@
 }
 
 .nav{
-	position: sticky;
+		position: fixed;
+width: 100%;
 	top: 0;
-	background: #872057;
+	/* background: #872057; */
 	
 }
 .logo{
@@ -15,7 +16,7 @@
 
  .menu {
 	line-height: 10vh;
-		padding: 0;
+	padding: 0;
 	margin: 0;
 } 
 .menuList {
@@ -34,7 +35,8 @@
 .menuLink {
 	display: block;
 	text-align: center;
-	color: #fff;
+	color: black;
+	font-size: 120%;
 	text-decoration: none;
 }
 
@@ -136,6 +138,36 @@
 
 .footer {
 	background: white;
-	padding: 30px;
+	padding-top: 10px;
 	text-align: center;
 }
+
+
+
+
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+
+
