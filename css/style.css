@@ -2,13 +2,14 @@
 	color: black;
 }
 
-.nav{
-		position: fixed;
-width: 100%;
+nav{
+	position: fixed;
+	width: 100%;
 	top: 0;
-	/* background: #872057; */
-	
+	background: #12C5BA;
+	z-index: 1;
 }
+
 .logo{
 	 background: url('../img/logotyp.png') center/cover;
 	min-height: 10vh; 
@@ -19,6 +20,7 @@ width: 100%;
 	padding: 0;
 	margin: 0;
 } 
+
 .menuList {
 	display: flex;
 	justify-content: space-between;
@@ -42,17 +44,17 @@ width: 100%;
 
 .menuLink:hover {
 	text-decoration: none;
-	background: #65052A;
+	background: #35E7DC;
 }
 
 .slider{
 	background-color: #fff;
-	background: url('../img/tlo.png') center/cover;
+	background: url('../img/tlo3.png') center/cover;
 	min-height: 100vh;
-	text-align: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+/* 	text-align: center; 
+	background-repeat: no-repeat; */ 
 }
+
 .titleSection{
 	text-align: center;
 	font-size: 2.5rem;
@@ -76,7 +78,7 @@ width: 100%;
 }
 
 .section:nth-of-type(even) {
-	background: #87274C;
+	background: #0093D0;
 }
 
 .technologyItem{
@@ -136,38 +138,9 @@ width: 100%;
 	min-height: 80px;
 }
 
-.footer {
+footer {
 	background: white;
 	padding-top: 10px;
 	text-align: center;
 }
-
-
-
-
-/*animation element sliding left*/
-
-.animation-element.slide-left {
-  opacity: 0;
-  -moz-transition: all 500ms linear;
-  -webkit-transition: all 500ms linear;
-  -o-transition: all 500ms linear;
-  transition: all 500ms linear;
-  -moz-transform: translate3d(-100px, 0px, 0px);
-  -webkit-transform: translate3d(-100px, 0px, 0px);
-  -o-transform: translate(-100px, 0px);
-  -ms-transform: translate(-100px, 0px);
-  transform: translate3d(-100px, 0px, 0px);
-}
-
-.animation-element.slide-left.in-view {
-  opacity: 1;
-  -moz-transform: translate3d(0px, 0px, 0px);
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -o-transform: translate(0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
-}
-
-
 
