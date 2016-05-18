@@ -1,5 +1,7 @@
-.container-fluid{
-	color: black;
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14pt;
+    color: #222;
 }
 
 nav{
@@ -8,6 +10,8 @@ nav{
 	top: 0;
 	background: #12C5BA;
 	z-index: 1;
+    text-transform: lowercase;
+    letter-spacing: 2px;
 }
 
 .logo{
@@ -45,6 +49,7 @@ nav{
 .menuLink:hover {
 	text-decoration: none;
 	background: #35E7DC;
+    transition: all 0.5s;
 }
 
 .slider{
@@ -55,13 +60,18 @@ nav{
 	background-repeat: no-repeat; */ 
 }
 
-.titleSection{
+#aboutUs .content {
+    color: #fff;
+}
+
+h1 {
 	text-align: center;
 	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: black;
 	padding-bottom: 5vh;
 	font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .content{
