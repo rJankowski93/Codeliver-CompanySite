@@ -20,3 +20,18 @@ var slowScroll = (function() {
 	}
 }());
 
+var showLogo = (function() {
+	var fadeSpeed = 200, fadeTo = 0.5, topDistance = 30;
+	var topbarME = function() { $('#nav').fadeTo(fadeSpeed,1); };
+	var topbarML = function() { $('#nav').fadeTo(fadeSpeed,fadeTo); };
+	var inside = false;
+	$(window).scroll(function() {
+		position = $(window).scrollTop();
+		if(position > topDistance && !inside) {
+			$('#logo').addClass("logo col-sm-3 col-xs-12");
+		}
+		else if (position < topDistance){
+			$('#logo').removeClass("logo col-sm-3 col-xs-12");
+		}
+	});
+})();

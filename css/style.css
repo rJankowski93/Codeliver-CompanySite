@@ -8,7 +8,7 @@ nav{
 	position: fixed;
 	width: 100%;
 	top: 0;
-	background: #12C5BA;
+	background: white;
 	z-index: 1;
     text-transform: lowercase;
     letter-spacing: 2px;
@@ -17,6 +17,7 @@ nav{
 .logo{
 	 background: url('../img/logotyp.png') center/cover;
 	min-height: 10vh; 
+	 transition: all 1s;
 }
 
  .menu {
