@@ -8,14 +8,14 @@ nav{
 	position: fixed;
 	width: 100%;
 	top: 0;
-	background: white;
+	background: black;
 	z-index: 1;
     text-transform: lowercase;
     letter-spacing: 2px;
 }
 
 .logo{
-	 background: url('../img/logotyp.png') center/cover;
+	 background: url('../img/logotyp2.png') center/cover;
 	min-height: 10vh; 
 	right: 25%;
 	transition: right 1s;
@@ -61,6 +61,7 @@ nav{
 	color: black;
 	font-size: 120%;
 	text-decoration: none;
+	color: white
 }
 
 .menuLink:hover {
@@ -103,9 +104,11 @@ h1 {
 }
 
 .section:nth-of-type(even) {
-	background: #0093D0;
+	background: black;
 }
-
+.section:nth-of-type(even) h1{
+	color: white;
+}
 .technologyItem{
 	text-align: center;
 	padding-bottom: 4vh;
@@ -126,7 +129,7 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    color: #2B313D;
+    color: white;
     font-size: 1.50rem;
     font-weight: 700;
     text-transform: uppercase;
