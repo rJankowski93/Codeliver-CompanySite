@@ -28,10 +28,12 @@ var showLogo = (function() {
 	$(window).scroll(function() {
 		position = $(window).scrollTop();
 		if(position > topDistance && !inside) {
-			$('#logo').addClass("logo col-sm-3 col-xs-12");
+			$('#logo').addClass("logoShow");
+			$('#menu').addClass("menuRight");
 		}
 		else if (position < topDistance){
-			$('#logo').removeClass("logo col-sm-3 col-xs-12");
+			$('#logo').removeClass("logoShow");
+			$('#menu').removeClass("menuRight");
 		}
 	});
 })();

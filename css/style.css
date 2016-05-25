@@ -17,7 +17,23 @@ nav{
 .logo{
 	 background: url('../img/logotyp.png') center/cover;
 	min-height: 10vh; 
-	 transition: all 1s;
+	right: 25%;
+	transition: right 1s;
+}
+
+.logoShow{
+	right: 0px;
+	transition: all 1s;
+
+}
+.menuLeft{
+	right: 25%;
+	transition: all 1s;
+}
+
+.menuRight{
+	right: 0px;
+	transition: all 1s;
 }
 
  .menu {
@@ -55,7 +71,7 @@ nav{
 
 .slider{
 	background-color: #fff;
-	background: url('../img/tlo3.png') center/cover;
+	background: url('../img/tlo5.png') center/cover;
 	min-height: 100vh;
 /* 	text-align: center; 
 	background-repeat: no-repeat; */ 
