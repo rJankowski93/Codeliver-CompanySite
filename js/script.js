@@ -20,7 +20,7 @@ var slowScroll = (function() {
 	}
 }());
 
-var showLogo = (function() {
+var showLogoAnd = (function() {
 	var fadeSpeed = 200, fadeTo = 0.5, topDistance = 30;
 	var topbarME = function() { $('#nav').fadeTo(fadeSpeed,1); };
 	var topbarML = function() { $('#nav').fadeTo(fadeSpeed,fadeTo); };
@@ -34,6 +34,9 @@ var showLogo = (function() {
 		else if (position < topDistance){
 			$('#logo').removeClass("logoShow");
 			$('#menu').removeClass("menuRight");
+		}
+		if(position>1100){
+			$('.hideImg').addClass("showImg");
 		}
 	});
 })();

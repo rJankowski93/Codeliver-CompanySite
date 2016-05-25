@@ -73,8 +73,6 @@ nav{
 	background-color: #fff;
 	background: url('../img/tlo5.png') center/cover;
 	min-height: 100vh;
-/* 	text-align: center; 
-	background-repeat: no-repeat; */ 
 }
 
 #aboutUs .content {
@@ -111,6 +109,17 @@ h1 {
 .technologyItem{
 	text-align: center;
 	padding-bottom: 4vh;
+}
+
+.hideImg{
+	width: 1px;
+	height: 1px;
+}
+
+.showImg{
+	width: 100px;
+	height: 100px;
+	transition: all 1s;
 }
 
 .technologyText {
