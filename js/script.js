@@ -35,7 +35,7 @@ var showLogoAnd = (function() {
 			$('#logo').removeClass("logoShow");
 			$('#menu').removeClass("menuRight");
 		}
-		if(position>1100){
+		if(position>900){
 			$('.hideImg').addClass("showImg");
 		}
 	});
