@@ -1,7 +1,7 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14pt;
-    color: #222;
+    color: white;
 }
 
 nav{
@@ -84,7 +84,7 @@ h1 {
 	text-align: center;
 	font-size: 2.5rem;
 	text-transform: uppercase;
-	color: black;
+	color: white;
 	padding-bottom: 5vh;
 	font-weight: 700;
     letter-spacing: 1.5px;
@@ -99,7 +99,7 @@ h1 {
 }
 
 .section {
-	background: white;
+	background: black;
 	padding: 30px 0;
 }
 
@@ -157,29 +157,36 @@ h1 {
 	border:1px solid #ccc;
 	margin-bottom:25px;
 	width:80%;
+	color: black
 }
 
 .contactFormName{
     background-image: url('../icon/user.png');
     background-repeat: no-repeat;
+	background-position: 2px;
+	color:black;
 }
 
 .contactFormEmail{
     background-image: url('../icon/mail.png');
     background-repeat: no-repeat;
     background-position: 2px;
+	color:black;
 }
 
 .contactFormMessage{
     background-image: url('../icon/message.png');
     background-repeat: no-repeat;
-	background-position: 2px 2px;
+	background-position: 3px 8px;
 	min-height: 80px;
+	color:black;
 }
 
 footer {
 	background: white;
 	padding-top: 10px;
 	text-align: center;
+	color: black;
+	
 }
 
