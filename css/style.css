@@ -1,192 +1,201 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14pt;
-    color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14pt;
+  color: white;
 }
-
+/*320 minimum*/
 nav{
-	position: fixed;
-	width: 100%;
-	top: 0;
-	background: black;
-	z-index: 1;
-    text-transform: lowercase;
-    letter-spacing: 2px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: black;
+  z-index: 1;
+  text-transform: lowercase;
+  letter-spacing: 2px;
 }
 
 .logo{
-	 background: url('../img/logotyp2.png') center/cover;
-	min-height: 10vh; 
-	right: 25%;
-	transition: right 1s;
+  background: url('../img/logotyp2.png') center/cover;
+  min-height: 8vh;
+  right: 25%;
+  transition: right 1s;
 }
 
 .logoShow{
-	right: 0px;
-	transition: all 1s;
+  right: 0px;
+  transition: all 1s;
 
 }
 .menuLeft{
-	right: 25%;
-	transition: all 1s;
+  right: 25%;
+  transition: all 1s;
 }
 
 .menuRight{
-	right: 0px;
-	transition: all 1s;
+  right: 0px;
+  transition: all 1s;
 }
 
- .menu {
-	line-height: 10vh;
-	padding: 0;
-	margin: 0;
-} 
+.menu {
+  line-height: 8vh;
+  padding: 0;
+  margin: 0;
+}
 
 .menuList {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	padding: 0;
-	margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menuItem{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .menuLink {
-	display: block;
-	text-align: center;
-	color: black;
-	font-size: 120%;
-	text-decoration: none;
-	color: white
+  display: block;
+  text-align: center;
+  color: black;
+  font-size: 120%;
+  text-decoration: none;
+  color: white
 }
 
 .menuLink:hover {
-	text-decoration: none;
-	background: #444;
-    transition: all 0.5s;
+  text-decoration: none;
+  background: #444;
+  transition: all 0.5s;
 }
 
 .slider{
-	background-color: #fff;
-	background: url('../img/tlo5.png') center/cover;
-	min-height: 100vh;
+  background-color: #fff;
+  background: url('../img/tlo5.png') center/cover;
+  min-height: 100vh;
+  margin-top: 2vh;
+}
+
+.zgrany {
+  font-weight: bold;
 }
 
 #aboutUs .content {
-    color: #fff;
+  color: #fff;
+}
+
+#aboutUs p {
+  text-align: center;
+  font-size: 130%;
 }
 
 h1 {
-	text-align: center;
-	font-size: 2.5rem;
-	text-transform: uppercase;
-	color: white;
-	padding-bottom: 5vh;
-	font-weight: 700;
-    letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 5.5rem;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 5vh;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 .content{
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .section {
-	background: black;
-	padding: 30px 0;
+  background: black;
+  padding: 30px 0;
 }
 
 .section:nth-of-type(even) {
-	background: #6C0570;
+  background: #6C0570;
 }
 .section:nth-of-type(even) h1{
-	color: white;
+  color: white;
 }
 .technologyItem{
-	text-align: center;
-	padding-bottom: 4vh;
+  text-align: center;
+  padding-bottom: 4vh;
 }
 
 .hideImg{
-	width: 1px;
-	height: 1px;
+  width: 1px;
+  height: 1px;
 }
 
 .showImg{
-	width: 100px;
-	height: 100px;
-	transition: all 1s;
+  width: 100px;
+  height: 100px;
+  transition: all 1s;
 }
 
 .technologyText {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
-    font-size: 1.50rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 1.50rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 #contactText{
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
 }
 
 #contactForm{
-	margin: 0;
-	padding-top: 3vh;
-	text-align: center;
-	border-radius: 10px;
+  margin: 0;
+  padding-top: 3vh;
+  text-align: center;
+  border-radius: 10px;
 }
 
 #contactForm textarea, #contactForm input {
-	margin-left: 10%;
-	padding:5px;
-	padding-left:30px;
-	border-radius:3px;
-	border:1px solid #ccc;
-	margin-bottom:25px;
-	width:80%;
-	color: black
+  margin-left: 10%;
+  padding:5px;
+  padding-left:30px;
+  border-radius:3px;
+  border:1px solid #ccc;
+  margin-bottom:25px;
+  width:80%;
+  color: black
 }
 
 .contactFormName{
-    background-image: url('../icon/user.png');
-    background-repeat: no-repeat;
-	background-position: 2px;
-	color:black;
+  background-image: url('../icon/user.png');
+  background-repeat: no-repeat;
+  background-position: 2px;
+  color:black;
 }
 
 .contactFormEmail{
-    background-image: url('../icon/mail.png');
-    background-repeat: no-repeat;
-    background-position: 2px;
-	color:black;
+  background-image: url('../icon/mail.png');
+  background-repeat: no-repeat;
+  background-position: 2px;
+  color:black;
 }
 
 .contactFormMessage{
-    background-image: url('../icon/message.png');
-    background-repeat: no-repeat;
-	background-position: 3px 8px;
-	min-height: 80px;
-	color:black;
+  background-image: url('../icon/message.png');
+  background-repeat: no-repeat;
+  background-position: 3px 8px;
+  min-height: 80px;
+  color:black;
 }
 
 footer {
-	background: white;
-	padding-top: 10px;
-	text-align: center;
-	color: black;
-	
-}
+  background: white;
+  padding-top: 10px;
+  text-align: center;
+  color: black;
 
+}
