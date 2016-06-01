@@ -2,8 +2,9 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14pt;
   color: white;
+  min-width: 360px;
 }
-/*320 minimum*/
+
 nav{
   position: fixed;
   width: 100%;
@@ -78,16 +79,33 @@ nav{
 }
 
 .zgrany {
+text-decoration: none;
   font-weight: bold;
+  font-size: 10.5rem;	
 }
 
 #aboutUs .content {
   color: #fff;
 }
 
+
+
 #aboutUs p {
   text-align: center;
   font-size: 130%;
+}
+
+.contactLink{
+	font-size: 2.5rem;	
+	color: white;
+	text-decoration: none;
+}
+
+.contactLink:hover{
+	font-size: 3.5rem;	
+	text-decoration: underline;
+	font-weight: bold;
+	transition: all 0.5s;
 }
 
 h1 {
