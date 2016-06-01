@@ -65,11 +65,35 @@ nav{
   color: white
 }
 
-.menuLink:hover {
-  text-decoration: none;
-  background: #444;
+//.menuLink:hover {
+// text-decoration: none;
+//  background: #444;
+//  transition: all 0.5s;
+//}
+
+.menuLinkAboutUs:hover {
+ text-decoration: none;
+  background: #5FBA46;
   transition: all 0.5s;
 }
+
+.menuLinkWhatDo:hover {
+ text-decoration: none;
+  background: #38C5ED;
+  transition: all 0.5s;
+}
+.menuLinkTechnology:hover {
+ text-decoration: none;
+  background: #B92E96;
+  transition: all 0.5s;
+}
+.menuLinkContact:hover {
+ text-decoration: none;
+  background: #DA3420;
+  transition: all 0.5s;
+}
+
+
 
 .slider{
   background-color: #fff;
@@ -88,7 +112,18 @@ text-decoration: none;
   color: #fff;
 }
 
-
+#aboutUs {
+  background: #5FBA46;
+}
+#whatDo {
+  background: #38C5ED;
+}
+#technology {
+  background: #B92E96;
+}
+#contact {
+  background: #DA3420;
+}
 
 #aboutUs p {
   text-align: center;
