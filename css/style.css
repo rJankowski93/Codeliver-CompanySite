@@ -16,8 +16,8 @@ nav{
 }
 
 .logo{
-  background: url('../img/logotyp2.png') center/cover;
-  min-height: 8vh;
+  background: url('../img/logoo.png') center/cover;
+  height: 45px;
   right: 25%;
   transition: right 1s;
 }
@@ -38,7 +38,7 @@ nav{
 }
 
 .menu {
-  line-height: 8vh;
+    line-height: 45px;
   padding: 0;
   margin: 0;
 }
