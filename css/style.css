@@ -209,8 +209,8 @@ h1 {
 }
 
 .showImg {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	transition: all 1s;
 }
 
@@ -246,7 +246,8 @@ h1 {
 	border: 1px solid #ccc;
 	margin-bottom: 25px;
 	width: 80%;
-	color: black
+	color: black;
+	
 }
 
 .contactFormName {
