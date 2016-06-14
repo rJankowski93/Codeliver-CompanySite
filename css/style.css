@@ -2,10 +2,11 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14pt;
 	color: white;
-	min-width: 360px;
+	min-width: 600px;
 }
 
 nav {
+	min-width: 600px;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -129,8 +130,28 @@ nav {
 	font-size: 10.5rem;
 }
 
+.center{
+	text-align: center;
+}
+
+.whatDoTitle{
+	text-align: center;
+/* 	text-decoration: none; */
+	
+}
+
 #aboutUs .content {
 	color: #fff;
+}
+
+#whatDo .content{
+	font-size: 2rem;
+}
+
+.whatDoTitle{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 3rem;
 }
 
 #aboutUs {
@@ -140,6 +161,7 @@ nav {
 #whatDo {
 	background: #1B7B96;
 }
+
 
 #technology {
 	background: #78165F;
@@ -209,8 +231,8 @@ h1 {
 }
 
 .showImg {
-	width: 80px;
-	height: 80px;
+	width: 70px;
+	height: 70px;
 	transition: all 1s;
 }
 
@@ -219,7 +241,7 @@ h1 {
 	margin-left: auto;
 	margin-right: auto;
 	color: white;
-	font-size: 1.50rem;
+	font-size: 1.30rem;
 	font-weight: 700;
 	text-transform: uppercase;
 }

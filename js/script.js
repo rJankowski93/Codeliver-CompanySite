@@ -8,7 +8,7 @@ var all = (function() {
 		positionSectionWhatDo : {},
 		positionSectionTechnology : {},
 		positionSectionContact : {},
-		logoHeight: 0
+		logoHeight : 0
 	};
 
 	document.addEventListener('DOMContentLoaded', startPage, false);
@@ -20,20 +20,24 @@ var all = (function() {
 		variables.sectiontTechnology = $("#technology");
 		variables.sectionContact = $("#contact");
 	}
-	
+
 	function setSize() {
-		logoHeight = $(".logo").height()-1;
+		logoHeight = $(".logo").height() - 1;
 		variables.positionSectionWhatDo = parseInt(variables.sectionWhatDo
-				.position().top - logoHeight);
-		
+				.position().top
+				- logoHeight);
+
 		variables.positionSectionAboutUs = parseInt(variables.sectionaAboutUs
-				.position().top - logoHeight);
-		
+				.position().top
+				- logoHeight);
+
 		variables.positionSectionTechnology = parseInt(variables.sectiontTechnology
-				.position().top - logoHeight);
-		
+				.position().top
+				- logoHeight);
+
 		variables.positionSectionContact = parseInt(variables.sectionContact
-				.position().top - logoHeight);
+				.position().top
+				- logoHeight);
 	}
 
 	function slowScroll() {
@@ -55,7 +59,8 @@ var all = (function() {
 												.animate(
 														{
 															scrollTop : target
-																	.offset().top - logoHeight
+																	.offset().top
+																	- logoHeight
 														}, 1000);
 										return false;
 									}
@@ -122,5 +127,4 @@ var all = (function() {
 			$('.menuLinkContact').removeClass("menuLinkContactNewColor");
 		}
 	}
-
 }());
