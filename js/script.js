@@ -19,6 +19,7 @@ var all = (function() {
 		variables.sectionaAboutUs = $("#aboutUs");
 		variables.sectiontTechnology = $("#technology");
 		variables.sectionContact = $("#contact");
+		setSize();
 	}
 
 	function setSize() {
@@ -94,7 +95,8 @@ var all = (function() {
 	}
 
 	function showIcons(topDistance, position) {
-		if (position > 900) {
+		console.log(variables.positionSectionTechnology);
+		if (position > variables.positionSectionTechnology-400) {
 			$('.hideImg').addClass("showImg");
 		}
 	}

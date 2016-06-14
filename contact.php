@@ -12,7 +12,7 @@ $mail->SetFrom($_POST['email'], $_POST['name']);
 
 $mail->AddReplyTo($_POST['email'],$_POST['name']);
 
-$address = "janiu25@gmail.com";
+$address = "rafal.jankowski.93@gmail.com";
 
 $mail->AddAddress($address, "Codeliver");
 
