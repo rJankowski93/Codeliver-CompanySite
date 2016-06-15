@@ -95,8 +95,7 @@ var all = (function() {
 	}
 
 	function showIcons(topDistance, position) {
-		console.log(variables.positionSectionTechnology);
-		if (position > variables.positionSectionTechnology-400) {
+		if (position > variables.positionSectionTechnology-(window.innerHeight/2)) {
 			$('.hideImg').addClass("showImg");
 		}
 	}
@@ -115,7 +114,6 @@ var all = (function() {
 		} else {
 			$('.menuLinkAboutUs').removeClass("menuLinkAboutUsNewColor");
 		}
-		console
 		if (position < (variables.positionSectionTechnology + 2)
 				&& position > (variables.positionSectionTechnology - 2)) {
 			$('.menuLinkTechnology').addClass("menuLinkTechnologyNewColor");
