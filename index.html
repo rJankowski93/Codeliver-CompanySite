@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/style.css">
-<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid">
@@ -28,35 +28,53 @@
 			</div>
 		</nav>
 		<section class="slider row"></section>
+		<div class="shadow">
 		<section class="section row " id="aboutUs">
-			<h1>O nas</h1>
-			<div class="content">
-				<p>Trzynaście głów. Trzynaście indywidualności. Trzynastu prawdziwych pasjonatów.</p>
-				<p class="zgrany">Jeden zgrany zespół.</p>
 
-				<p>Jesteśmy grupą przyjaciół, a jednocześnie programistów i designerów, żywo zainteresowanych najróżniejszymi poddziedzinami informatyki. Przynosimy nową jakość na scenę IT, zaopatrzeni w
-					bardzo szeroki wachlarz umiejętności. Projektujemy, tworzymy i wdrażamy rozwiązania informatyczne wydajnie i kompleksowo.</p>
-				<p>
-					<a class="contactLink" href="#contact">Napisz do nas!</a>
-				</p>
-			</div>
-		</section>
-		<section class="section row" id="whatDo">
-			<h1>Co robimy</h1>
 			<div class="content">
+				<h1 class="major">O nas</h1>
+				<div class="row" id="padding-about">
+
+  			<div class="col-sm-4"><img class="aboutUsImg" src="img/about.png" alt="o firmie codeliver"></div>
+			  		<div class="col-sm-8">
+							<p>Trzynaście głów. Trzynaście indywidualności. Trzynastu prawdziwych pasjonatów.</p>
+							<p class="zgrany">Jeden zgrany zespół.</p>
+
+							<p>Jesteśmy grupą przyjaciół, a jednocześnie programistów i designerów, żywo zainteresowanych najróżniejszymi poddziedzinami informatyki. Przynosimy nową jakość na scenę IT, zaopatrzeni w
+							bardzo szeroki wachlarz umiejętności. Projektujemy, tworzymy i wdrażamy rozwiązania informatyczne wydajnie i kompleksowo.</p>
+							<p>	<a class="contactLink" href="#contact">Napisz do nas!</a></p>
+						</div>
+		</div>
+				<div class="row">
+					<div class="col-sm-12">
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+</div>
+
+
+		<section class="section row" id="whatDo">
+
+			<div class="content">
+				<h1 class="major">Co robimy</h1>
 				<p class="center">
 					Zakres naszych działań jest bardzo rozległy - łączymy wiedzę z różnych poddziedzin informatyki, więc jesteśmy uniwersalni i elastyczni. Tworzymy <b>strony internetowe</b> w sposób kompleksowy, od projektu graficznego do systemu zarządzania treścią, dostosowanego do potrzeb administratora. Projektujemy i realizujemy rozwiązania oparte o <b>systemy wbudowane</b>.
 					Tworzymy i wdrażamy aplikacje, których potrzebuje Twoja firma - zarówno <b>desktopowe</b>, jak i <b>mobilne</b>.
 				</p>
-				<p class="center">Do każdego zlecenia podchodzimy indywidualnie, starając się jak najlepiej rozeznać potrzeby Twojej firmy. 
+				<p class="center">Do każdego zlecenia podchodzimy indywidualnie, starając się jak najlepiej rozeznać potrzeby Twojej firmy.
 				W naszych rozwiązaniach podążamy za trendami i najlepszymi praktykami programistycznymi, dostarczając produkt maksymalnie wysokiej jakości.
 				Rozwiązując problemy, działamy w ścisłej współpracy z klientem, aby aplikacja, którą od nas otrzyma rzeczywiście była <b>aplikacją jego marzeń</b>.</p>
 
 			</div>
 		</section>
 		<section class="section row" id="technology">
-			<h1>Technologie</h1>
+
 			<div class="content">
+				<h1 class="major ">Technologie</h1>
 				<div class=" col-sm-4 col-xs-6 technologyItem">
 					<img class="hideImg" src="icon/html5.png" alt=""> <span class="technologyText">html</span>
 				</div>
@@ -105,8 +123,9 @@
 			</div>
 		</section>-->
 		<section class="section row" id="contact">
-			<h1>Kontakt</h1>
+
 			<div class="content">
+				<h1 class="major">Kontakt</h1>
 				<div id="contactText" class="col-sm-6">
 					<h3>Skontaktuj sie z nami</h3>
 					<h4>+48 730 557 912</h4>
@@ -137,6 +156,7 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="js/demo-1.js"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('form').bind('submit', function() {
