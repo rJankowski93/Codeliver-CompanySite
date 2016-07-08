@@ -125,7 +125,7 @@ nav {
 
 .slider {
 	background-color: #fff;
-	background: url('../img/tlo6.png') center/cover;
+	background: url('../img/bgMain.png') center/cover;
 	min-height: 100vh;
 	margin-top: 2vh;
 }
@@ -352,6 +352,7 @@ h1 {
 	color: black;
 }
 
+	
 footer {
 	background: black;
 	padding: 40px;

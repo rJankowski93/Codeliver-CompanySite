@@ -1,0 +1,11 @@
+.section {
+width: 100%;
+height: auto;
+background: url(../img/bg_code.png) no-repeat #fff; }
+  .section .inner {
+    width: 100%;
+    height: 720px;
+	text-align: center;
+	margin: 0 auto;
+
+    background: url(../img/logo_code.png) no-repeat; }
