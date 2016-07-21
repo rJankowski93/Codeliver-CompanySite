@@ -3,6 +3,7 @@ body {
 	font-size: 14pt;
 	color: white;
 	min-width: 320px;
+	
 }
 
 nav {
@@ -14,6 +15,11 @@ nav {
 	z-index: 1;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	
+}
+
+.navbar-inverse{
+	background: #111111;
 }
 
 .logo {
@@ -22,28 +28,27 @@ nav {
 	height: 50px;
 	right: 25%;
 	transition: right 1s;
+	z-index: 1;
 }
 
 
 
-.menuLeft {
-	background: red;
+.menuLeft {	
 	right: 25%;
-	transition: all 1s;
-	
+	transition: all 1s;	
 }
 
 .menuRight {
-	right: 0px;
+	right: 0;
 	transition: all 1s;
 }
 
+
 .menu {
-	
 	line-height: 50px;
 	padding: 0;
 	margin: 0;
-	background: black;
+	background: #111111;
 }
 
 @media ( max-width : 770px) {
@@ -119,6 +124,8 @@ nav {
 	background: #1B7B96;
 }
 
+
+/* Narazie dla wsyztskich menu link to samo ale zostawie narazie rozdzial bo mzoe cos bedizmey zmieniac */
 .menuLinkAboutUs:hover {
 	text-decoration: none;
 	background: #0D032A; /* For browsers that do not support gradients */
@@ -126,29 +133,36 @@ nav {
 	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
 	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
 	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-	font-size: 120%;
 	transition: all 0.5s;
 }
 
 .menuLinkWhatDo:hover {
-	text-decoration: none;
-	background: white;
-	color: #1D1D1B;
-	font-size: 120%;
+		text-decoration: none;
+	background: #0D032A; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
 	transition: all 0.5s;
 }
 
 .menuLinkTechnology:hover {
-	text-decoration: none;
-	background-image: url("../img/pw_maze_black.png");
-	font-size: 120%;
+		text-decoration: none;
+	background: #0D032A; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
 	transition: all 0.5s;
 }
 
 .menuLinkContact:hover {
 	text-decoration: none;
-	background: #1B7B96;
-	font-size: 120%;
+	background: #0D032A; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
 	transition: all 0.5s;
 }
 
