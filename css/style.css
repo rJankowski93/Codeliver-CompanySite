@@ -49,6 +49,7 @@ nav {
 	padding: 0;
 	margin: 0;
 	background: #111111;
+
 }
 
 @media ( max-width : 770px) {
@@ -78,13 +79,31 @@ nav {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	
 }
+
+
 
 .logoShow {
 	right: 0px;
 	transition: all 1s;
 }
 }
+
+
+
+@media ( min-width : 990px) {
+.menu{
+		line-height: 50px;
+	padding: 0;
+	margin: 0;
+	background: #111111;
+		width: 70%;	
+	}
+}
+
+
+
 
 
 
@@ -103,12 +122,17 @@ nav {
 	line-height: 50px;
 }
 
+
+/* Kolory przy odwiedzaniu aktualnej zakładki elimuje narazie bo nie wiem jakei beda ładne
+TODO Darek
+
+
 .menuLinkAboutUsNewColor {
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+	background: #0D032A; 
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); 
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); 
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); 
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); 
 }
 
 .menuLinkWhatDoNewColor {
@@ -123,9 +147,11 @@ nav {
 .menuLinkContactNewColor {
 	background: #1B7B96;
 }
+*/
 
-
-/* Narazie dla wsyztskich menu link to samo ale zostawie narazie rozdzial bo mzoe cos bedizmey zmieniac */
+/* Narazie dla wsyztskich menu link to samo ale zostawie narazie rozdzial bo mzoe cos bedizmey zmieniac 
+TODO Darek
+*/
 .menuLinkAboutUs:hover {
 	text-decoration: none;
 	background: #0D032A; /* For browsers that do not support gradients */
@@ -183,6 +209,7 @@ nav {
 	text-align: center;
 }
 
+
 #aboutUs .content {
 	color: #fff;
 }
@@ -237,20 +264,29 @@ h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
 }
+
+
 #whatDo {
 	background: white;
 	color: #1D1D1B;
-
 }
+#technology {
+	background-image: url("../img/pw_maze_black.png");
+}
+#contact {
+	background: #1B7B96;
+}
+
+
+
+
 #whatDo h1.major {
 		border-bottom: solid 5px #eeeeee;
 		color: #1D1D1B;
 		text-align: left;
 }
 
-#technology {
-	background-image: url("../img/pw_maze_black.png");
-}
+
 #technology h1.major {
 		border-bottom: solid 5px #1B7B96;
 		color: white;
@@ -258,9 +294,7 @@ h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
 		margin-bottom: 80px;
 }
 
-#contact {
-	background: #1B7B96;
-}
+
 #contact h1.major {
 	 border-bottom: solid 5px white;
 
