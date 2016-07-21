@@ -1,127 +1,117 @@
 body {
-	font-family: 'PT Sans', sans-serif;
-	font-size: 14pt;
-	color: white;
-	min-width: 320px;
-	
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14pt;
+    color: white;
+    min-width: 320px;
+
 }
 
 nav {
-	min-width: 320px;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	background: #111111;
-	z-index: 1;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	
+    min-width: 320px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #111111;
+    z-index: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
 }
 
-.navbar-inverse{
-	background: #111111;
+.navbar-inverse {
+    background: #111111;
 }
 
 .logo {
-	position: relative;
-	background: url('../img/logo.png') center/cover;
-	height: 50px;
-	right: 25%;
-	transition: right 1s;
-	z-index: 1;
+    position: relative;
+    background: url('../img/logo.png') center/cover;
+    height: 50px;
+    right: 25%;
+    transition: right 1s;
+    z-index: 1;
 }
 
-
-
-.menuLeft {	
-	right: 25%;
-	transition: all 1s;	
+.menuLeft {
+    right: 25%;
+    transition: all 1s;
 }
 
 .menuRight {
-	right: 0;
-	transition: all 1s;
+    right: 0;
+    transition: all 1s;
 }
-
 
 .menu {
-	line-height: 50px;
-	padding: 0;
-	margin: 0;
-	background: #111111;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    background: #111111;
 
 }
 
-@media ( max-width : 770px) {
-.navbar-toggle{
-	
-	z-index: 2;
-}
-	.logo {
-		right: 0;
-		height: 80px;
-		text-align: center
-	}
-	.menuLeft {
-		right: 0px;
-		transition: all 1s;
-	}
-	.aboutUsImg {
-			height: 50%;
-			width: 50%;
-	}
-}
+@media ( max-width: 770px) {
+    .navbar-toggle {
 
-@media ( min-width : 770px) {
-.menuList {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	
+        z-index: 2;
+    }
+
+    .logo {
+        right: 0;
+        height: 80px;
+        text-align: center
+    }
+
+    .menuLeft {
+        right: 0px;
+        transition: all 1s;
+    }
+
+    .aboutUsImg {
+        height: 50%;
+        width: 50%;
+    }
 }
 
+@media ( min-width: 770px) {
+    .menuList {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding: 0;
+        margin: 0;
 
+    }
 
-.logoShow {
-	right: 0px;
-	transition: all 1s;
-}
-}
-
-
-
-@media ( min-width : 990px) {
-.menu{
-		line-height: 50px;
-	padding: 0;
-	margin: 0;
-	background: #111111;
-		width: 70%;	
-	}
+    .logoShow {
+        right: 0px;
+        transition: all 1s;
+    }
 }
 
-
-
-
-
+@media ( min-width: 990px) {
+    .menu {
+        line-height: 50px;
+        padding: 0;
+        margin: 0;
+        background: #111111;
+        width: 70%;
+    }
+}
 
 .menuItem {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .menuLink {
-	display: block;
-	text-align: center;
-	font-weight: bold;
-	font-size: 80%;
-	text-decoration: none;
-	color: white;
-	line-height: 50px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80%;
+    text-decoration: none;
+    color: white;
+    line-height: 50px;
 }
-
 
 /* Kolory przy odwiedzaniu aktualnej zakładki elimuje narazie bo nie wiem jakei beda ładne
 TODO Darek
@@ -153,285 +143,282 @@ TODO Darek
 TODO Darek
 */
 .menuLinkAboutUs:hover {
-	text-decoration: none;
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-	transition: all 0.5s;
+    text-decoration: none;
+    background: #0D032A; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+    background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+    transition: all 0.5s;
 }
 
 .menuLinkWhatDo:hover {
-		text-decoration: none;
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-	transition: all 0.5s;
+    text-decoration: none;
+    background: #0D032A; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+    background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+    transition: all 0.5s;
 }
 
 .menuLinkTechnology:hover {
-		text-decoration: none;
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-	transition: all 0.5s;
+    text-decoration: none;
+    background: #0D032A; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+    background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+    transition: all 0.5s;
 }
 
 .menuLinkContact:hover {
-	text-decoration: none;
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-	transition: all 0.5s;
+    text-decoration: none;
+    background: #0D032A; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+    background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+    transition: all 0.5s;
 }
 
 .slider {
-	background-color: #fff;
-	background: url('../img/bgMain.png') center/cover;
-	min-height: 100vh;
-	margin-top: 2vh;
+    background-color: #fff;
+    background: url('../img/bgMain.png') center/cover;
+    min-height: 100vh;
+    margin-top: 2vh;
 }
 
 .zgrany {
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 10.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10.5rem;
 }
 
-.center{
-	text-align: center;
+.center {
+    text-align: center;
 }
-
 
 #aboutUs .content {
-	color: #fff;
+    color: #fff;
 }
 
-#whatDo .content{
-	font-size: 2rem;
+#whatDo .content {
+    font-size: 2rem;
 }
 
-.whatDoTitle{
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 3rem;
+.whatDoTitle {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3rem;
 }
 
 #aboutUs {
-	background: #0D032A; /* For browsers that do not support gradients */
-	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
-	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
-	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
-	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+    background: #0D032A; /* For browsers that do not support gradients */
+    background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+    background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+    background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
 }
 
 #aboutUs p {
-	text-align: center;
-	font-size: 100%;
-	margin-bottom: 30px;
+    text-align: center;
+    font-size: 100%;
+    margin-bottom: 30px;
 }
+
 .aboutUsImg {
-		height: 100%;
-		width: 100%;
+    height: 100%;
+    width: 100%;
     margin: auto;
-		opacity: 0.05;
-	 	filter: alpha(opacity=5); /* For IE8 and earlier */
+    opacity: 0.05;
+    filter: alpha(opacity=5); /* For IE8 and earlier */
 }
-#padding-about{
-	padding: 30px;
+
+#padding-about {
+    padding: 30px;
 }
 
 h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-	border-bottom: solid 5px #E91B3B;
-	text-align: left;
-	font-size: 4rem;
-	text-transform: uppercase;
-	color: white;
-	padding-bottom: 2vh;
-	font-weight: 700;
-	letter-spacing: 1.5px;
+    border-bottom: solid 5px #E91B3B;
+    text-align: left;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 2vh;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 
 }
+
 .shadow {
-   -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-   box-shadow:         inset 0 0 10px #000000;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
 }
-
 
 #whatDo {
-	background: white;
-	color: #1D1D1B;
+    background: white;
+    color: #1D1D1B;
 }
+
 #technology {
-	background-image: url("../img/pw_maze_black.png");
+    background-image: url("../img/pw_maze_black.png");
 }
+
 #contact {
-	background: #1B7B96;
+    background: #1B7B96;
 }
-
-
-
 
 #whatDo h1.major {
-		border-bottom: solid 5px #eeeeee;
-		color: #1D1D1B;
-		text-align: left;
+    border-bottom: solid 5px #eeeeee;
+    color: #1D1D1B;
+    text-align: left;
 }
-
 
 #technology h1.major {
-		border-bottom: solid 5px #1B7B96;
-		color: white;
-		text-align: center;
-		margin-bottom: 80px;
+    border-bottom: solid 5px #1B7B96;
+    color: white;
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-
 #contact h1.major {
-	 border-bottom: solid 5px white;
+    border-bottom: solid 5px white;
 
 }
 
 .contactLink {
 
-	text-align: center;
-	font-size: 2rem;
-	color: white;
-	background-color: rgba(0, 0, 0, 0.4);
-	text-decoration: none;
-	margin-top: 50px;
-	padding: 20px;
-	border-radius: 20px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 
 .contactLink:hover {
-	font-size: 3.5rem;
-	text-decoration: none;
-	font-weight: bold;
-	transition: all 0.5s;
+    font-size: 3.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s;
 }
 
 h1 {
-	text-align: center;
-	font-size: 5.5rem;
-	text-transform: uppercase;
-	color: white;
-	padding-bottom: 5vh;
-	font-weight: 700;
-	letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    color: white;
+    padding-bottom: 5vh;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .content {
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section {
-	background: black;
-	padding: 30px 0;
+    background: black;
+    padding: 30px 0;
 }
 
 .section:nth-of-type(even) {
-	background: #6C0570;
+    background: #6C0570;
 }
 
 .section:nth-of-type(even) h1 {
-	color: white;
+    color: white;
 }
 
 .technologyItem {
-	text-align: center;
-	padding-bottom: 4vh;
+    text-align: center;
+    padding-bottom: 4vh;
 }
 
 .hideImg {
-	width: 1px;
-	height: 1px;
+    width: 1px;
+    height: 1px;
 }
 
 .showImg {
-	width: 70px;
-	height: 70px;
-	transition: all 1s;
+    width: 70px;
+    height: 70px;
+    transition: all 1s;
 }
 
 .technologyText {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	color: white;
-	font-size: 1.30rem;
-	font-weight: 700;
-	text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-size: 1.30rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 #contactText {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 
-	text-align: center;
-	color: white;
+    text-align: center;
+    color: white;
 }
 
 #contactForm {
-	margin: 0;
-	padding-top: 3vh;
-	text-align: left;
-	border-radius: 10px;
-	padding-left: 10px;
+    margin: 0;
+    padding-top: 3vh;
+    text-align: left;
+    border-radius: 10px;
+    padding-left: 10px;
 }
 
 #contactForm textarea, #contactForm input {
-	margin-left: 10%;
-	padding: 5px;
-	padding-left: 45px;
-	border-radius: 5px;
-	border: 1px solid #ccc;
-	margin-bottom: 25px;
-	width: 80%;
-	color: black;
+    margin-left: 10%;
+    padding: 5px;
+    padding-left: 45px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+    width: 80%;
+    color: black;
 
 }
 
 .contactFormName {
-	background-image: url('../icon/user.png');
-	background-repeat: no-repeat;
-	background-position: 2px;
-	color: black;
+    background-image: url('../icon/user.png');
+    background-repeat: no-repeat;
+    background-position: 2px;
+    color: black;
 }
 
 .contactFormEmail {
-	background-image: url('../icon/mail.png');
-	background-repeat: no-repeat;
-	background-position: 2px;
-	color: black;
+    background-image: url('../icon/mail.png');
+    background-repeat: no-repeat;
+    background-position: 2px;
+    color: black;
 }
 
 .contactFormMessage {
-	background-image: url('../icon/message.png');
-	background-repeat: no-repeat;
-	background-position: 3px 8px;
-	min-height: 80px;
-	color: black;
+    background-image: url('../icon/message.png');
+    background-repeat: no-repeat;
+    background-position: 3px 8px;
+    min-height: 80px;
+    color: black;
 }
 
-	
 footer {
-	background: black;
-	padding: 40px;
-	text-align: center;
-	color: white;
+    background: black;
+    padding: 40px;
+    text-align: center;
+    color: white;
 }
