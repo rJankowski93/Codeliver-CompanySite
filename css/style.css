@@ -2,10 +2,11 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14pt;
 	color: white;
-	
+	min-width: 320px;
 }
 
 nav {
+	min-width: 320px;
 	position: fixed;
 	width: 100%;
 	top: 0;
