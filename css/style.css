@@ -2,11 +2,10 @@ body {
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14pt;
 	color: white;
-	min-width: 600px;
+	
 }
 
 nav {
-	min-width: 600px;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -24,14 +23,13 @@ nav {
 	transition: right 1s;
 }
 
-.logoShow {
-	right: 0px;
-	transition: all 1s;
-}
+
 
 .menuLeft {
+	background: red;
 	right: 25%;
 	transition: all 1s;
+	
 }
 
 .menuRight {
@@ -40,15 +38,22 @@ nav {
 }
 
 .menu {
+	
 	line-height: 50px;
 	padding: 0;
 	margin: 0;
+	background: black;
 }
 
 @media ( max-width : 770px) {
+.navbar-toggle{
+	
+	z-index: 2;
+}
 	.logo {
+		right: 0;
 		height: 80px;
-		left: 2vh;
+		text-align: center
 	}
 	.menuLeft {
 		right: 0px;
@@ -57,10 +62,10 @@ nav {
 	.aboutUsImg {
 			height: 50%;
 			width: 50%;
-
 	}
 }
 
+@media ( min-width : 770px) {
 .menuList {
 	display: flex;
 	justify-content: space-between;
@@ -68,6 +73,14 @@ nav {
 	padding: 0;
 	margin: 0;
 }
+
+.logoShow {
+	right: 0px;
+	transition: all 1s;
+}
+}
+
+
 
 .menuItem {
 	width: 100%;
@@ -80,46 +93,61 @@ nav {
 	font-weight: bold;
 	font-size: 80%;
 	text-decoration: none;
-	color: white
+	color: white;
+	line-height: 50px;
 }
 
 .menuLinkAboutUsNewColor {
-	background: #5FBA46;
+	background: #0D032A; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
 }
 
 .menuLinkWhatDoNewColor {
-	background: #38C5ED;
+	background: white;
+	color: #1D1D1B;
 }
 
 .menuLinkTechnologyNewColor {
-	background: #B92E96;
+	background-image: url("../img/pw_maze_black.png");
 }
 
 .menuLinkContactNewColor {
-	background: #DA3420;
+	background: #1B7B96;
 }
 
 .menuLinkAboutUs:hover {
 	text-decoration: none;
-	background: #5FBA46;
+	background: #0D032A; /* For browsers that do not support gradients */
+	background: -webkit-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Safari */
+	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
+	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
+	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
+	font-size: 120%;
 	transition: all 0.5s;
 }
 
 .menuLinkWhatDo:hover {
 	text-decoration: none;
-	background: #38C5ED;
+	background: white;
+	color: #1D1D1B;
+	font-size: 120%;
 	transition: all 0.5s;
 }
 
 .menuLinkTechnology:hover {
 	text-decoration: none;
-	background: #B92E96;
+	background-image: url("../img/pw_maze_black.png");
+	font-size: 120%;
 	transition: all 0.5s;
 }
 
 .menuLinkContact:hover {
 	text-decoration: none;
-	background: #DA3420;
+	background: #1B7B96;
+	font-size: 120%;
 	transition: all 0.5s;
 }
 
@@ -160,7 +188,6 @@ nav {
 	background: -o-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Opera 11.6 to 12.0 */
 	background: -moz-radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Firefox 3.6 to 15 */
 	background: radial-gradient(circle, #2B002A, #0D032A, #00001B); /* Standard syntax */
-
 }
 
 #aboutUs p {
