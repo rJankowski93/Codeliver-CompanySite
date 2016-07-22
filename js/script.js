@@ -45,7 +45,8 @@ var all = (function () {
         $(function () {
             $('a[href*="#"]:not([href="#"])')
                 .click(
-                    function () {
+                    function () {	
+						$('#menu').removeClass("in");
                         setSize();
                         if (location.pathname.replace(/^\//, '') == this.pathname
                                 .replace(/^\//, '')
@@ -103,6 +104,8 @@ var all = (function () {
     function colorMenu(position) {
         if (position < (variables.positionSectionWhatDo + 2)
             && position > (variables.positionSectionWhatDo - 2)) {
+			
+			
             $('.menuLinkWhatDo').addClass("menuLinkWhatDoNewColor");
         } else {
             $('.menuLinkWhatDo').removeClass("menuLinkWhatDoNewColor");
