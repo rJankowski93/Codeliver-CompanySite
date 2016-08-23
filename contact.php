@@ -3,7 +3,7 @@
 require_once('phpMailer/class.phpmailer.php');
 
 $mail             = new PHPMailer(); // defaults to using php "mail()"
-
+$mail->IsSendmail();
 $body = $_POST['message'];
 
 $mail->AddReplyTo($_POST['email'],$_POST['name']);
