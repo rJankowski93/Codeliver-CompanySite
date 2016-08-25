@@ -6,7 +6,8 @@
     <title>Codeliver</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
@@ -22,7 +23,7 @@
             <span class="icon-bar"></span>
         </button>
         <div id="logo" class="logo logo2 col-sm-3 "></div>
-        <div id="menu" class="menu menuLeft col-md-9 collapse navbar-collapse navHeaderCollapse">
+        <div id="menu" class="menu menuLeft col-md-backgroundb9 collapse navbar-collapse navHeaderCollapse">
             <ul class="menuList">
                 <li class="menuItem menuItemCurrent"><a href="#aboutUs" class="menuLink menuLinkAboutUs">O nas</a></li>
                 <li class="menuItem"><a href="#whatDo" class="menuLink menuLinkWhatDo">Co robimy</a></li>
@@ -68,6 +69,12 @@
 
         <div class="content">
             <h1 class="major">Co robimy</h1>
+			<div class="row">
+				<div class="col-xs-6 col-sm-6 col-md-3 "><img src="icon/1.png"><p>Strony WWW</p></div>
+				<div class="col-xs-6 col-sm-6 col-md-3"><img src="icon/2.png"><p>Aplikacje mobilne</p></div>
+				<div class="col-xs-6 col-sm-6 col-md-3"><img src="icon/3.png"><p>Programy</p></div>
+				<div class="col-xs-6 col-sm-6 col-md-3 "><img src="icon/4.png"><p>Systemy wbudowane</p></div>
+			</div>
             <p class="center">
                 Zakres naszych działań jest bardzo rozległy - łączymy wiedzę z różnych poddziedzin informatyki, więc jesteśmy uniwersalni i elastyczni. Tworzymy <b>strony
                 internetowe</b> w sposób kompleksowy, od projektu graficznego do systemu zarządzania treścią, dostosowanego do potrzeb administratora. Projektujemy i realizujemy
@@ -135,6 +142,7 @@
 
         <div class="content">
             <h1 class="major">Kontakt</h1>
+			<div class="row">
             <div id="contactText" class="col-sm-6">
                 <h3>Skontaktuj sie z nami</h3>
                 <h4>+48 730 557 912</h4>
@@ -146,12 +154,15 @@
                 <h4>31-147 Kraków</h4>
             </div>
             <div id="contactForm" class="col-sm-6">
-                <form>
-                    <input name="name" class="contactFormName" placeholder="Imie i nazwisko"> <input name="email" class="contactFormEmail" type="email" placeholder="E-mail">
-                    <textarea name="message" class="contactFormMessage" placeholder="Tresc wiadomosci"></textarea>
-                    <input id="submit" name="submit" type="submit" value="Wyślij">
+                <form  novalidate>
+                    <input name="name" class="contactFormName" placeholder="imię i nazwisko"> 
+					<input name="email" class="contactFormEmail" type="email" placeholder="e-mail">
+                    <textarea name="message" class="contactFormMessage" placeholder="wiadomość"></textarea>
+                    
+					<button type="submit" id="submit" name="submit" class="form-btn">Wyślij</button> 
                 </form>
             </div>
+			</div>
         </div>
     </section>
     <footer class="row ">
@@ -165,7 +176,7 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script src="js/demo-1.js"></script>
+
 <script type="text/javascript">
     $(function () {
         $('form').bind('submit', function () {
@@ -174,7 +185,7 @@
                 url: 'contact.php',
                 data: $('form').serialize(),
                 success: function () {
-                    alert('Wiadomosc została wysłana');
+                    alert('Wiadomość została wysłana');
                 }
             });
             return false;
